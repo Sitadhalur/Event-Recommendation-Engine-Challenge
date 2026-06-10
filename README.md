@@ -1,4 +1,4 @@
-# 8007 项目交付说明
+# 项目交付说明
 
 这是 Event Recommendation Engine Challenge 项目的交付包。
 
@@ -35,12 +35,12 @@ MAP@200 = 0.718516
 ## 推荐复现命令
 
 ```powershell
-& 'C:\Users\62571\anaconda3\envs\osm-history\python.exe' train_only_oof_blend.py --folds 5 --models hgb,xgb,cat --output submission_oof_ultrastrict_5fold_hgb_xgb_cat.csv --hgb-iter 320 --xgb-trees 380 --cat-iters 360 --trials 20000
+& train_only_oof_blend.py --folds 5 --models hgb,xgb,cat --output submission_oof_ultrastrict_5fold_hgb_xgb_cat.csv --hgb-iter 320 --xgb-trees 380 --cat-iters 360 --trials 20000
 ```
 
 ## 数据文件
 
-已包含原始数据：
+所需原始数据：
 
 - `train.csv`
 - `test.csv`
